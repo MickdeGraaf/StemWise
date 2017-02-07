@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>StemWise - De stemwijzer die jouw privacy respecteert</title>
+    <!-- Bootstrap CSS -->
+    <script src="https://use.fontawesome.com/fd33bc2ef6.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css?ver=0.3">
+  </head>
+  <body>
+
+    <div class="container main-container">
+
+        <div id="intro">
+            <h1>StemWise</h1>
+
+            <p>Stemwijzer.nl faalt, het slaat de resultaten op en is slecht beveiligd.</p>
+            <p>Er worden ongevraagd trackers ingeladen die bij kunnen houden wat jij stemt. Dit kan beter en opener. StemWise is open-source en slaat van jou niks op. Jouw computer haalt zelf de vragen op van stemwijzer.nl en de antwoorden worden enkel op jouw computer verwerkt.</p>
+
+            <p>Let op! Door verder te gaan accepteer jij dat je de vragen ophaalt van stemwijzer.nl. De makers van deze webapplicatie zijn niet verantwoordelijk voor eventueel illegaal gebruik</p>
+
+            <p><small>De resultaten kunnen licht afwijken. Hieraan wordt gewerkt.</small></p>
+
+
+            <p class="text-right"><button id="go" class="btn btn-primary btn-lg">Doorgaan</button></p>
+
+        </div>
+
+        <div id="loading" style="display: none">
+          <h2>Even wachten.....</h2>
+          <p>De vragen worden nu opgehaald van stemwijzer.nl</p>
+
+          <p class="text-center">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+          </p>
+
+        </div>
+
+        <div id="question" style="display: none">
+          <h2>1. Er moet een bindend</h2>
+          <p id="description"></p>
+
+          <div id="buttons">
+            <button type="button" id="agree" class="btn btn-outline-primary btn-lg">Eens</button>
+            <button type="button" id="neither" class="btn btn-outline-primary btn-lg">Geen van beide</button>
+            <button type="button" id="disagree" class="btn btn-outline-primary btn-lg">Oneens</button>
+          </div>
+
+        </div>
+
+        <div id="important" style="display: none">
+          <h2>Wat vind je belangrijk?</h2>
+
+          <p>Vink de punten aan die je belangrijk vind.</p>
+
+          <p><small>De punten die je aanvinkt tellen dubbel mee.</small></p>
+
+          <div class="row" id="important-list">
+
+
+          </div>
+
+          <p class="text-right"><button id="to-results" class="btn btn-primary btn-lg">Naar resultaten</button></p>
+
+        </div>
+
+        <div id="results" style="display:none">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Partij</th>
+                <th>Resultaat</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+
+      <p class="text-center" id="bottom-links">
+        <a href="https://github.com/MickdeGraaf"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/intent/tweet?text=StemWise%20is%20top%21%20%23verkiezingen%20%40MickdeG010&source=webclient"<i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </p>
+    </div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

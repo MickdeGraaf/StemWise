@@ -1,0 +1,29 @@
+body{
+  padding: 1.5rem 0px;
+  background: #ededed;
+}
+
+.container{
+  max-width: 46rem;
+  background: white;
+  min-height: 500px;
+}
+
+.container > div{
+  padding: 20px 0px;
+}
+
+#buttons{
+  position: absolute;
+  top: 200px;
+
+}
+
+#bottom-links{
+  position: absolute;
+  bottom: 0px;
+}
+
+.important-item{
+  font-size: 0.8rem;
+}
