@@ -48,6 +48,17 @@ $(document).ready(function(){
 
   $("#to-results").click(loadResults);
 
+  $(".back").click(function(){
+    console.log("back");
+    if(currentQuestion == 0){
+      showSection("intro");
+    }
+    else{
+      currentQuestion --;
+      showSection("question");
+      loadQuestion(currentQuestion);
+    }
+  });
 
 
 });
@@ -140,6 +151,6 @@ function loadQuestion(index){
   }
 
   console.log("loading question");
-  $("#question h2").text(questions[index].div[0].h1.content);
+  $("#question #heading").text(questions[index].div[0].h1.content);
   $("#question #description").text(questions[index].div[0].p.content);
 }
